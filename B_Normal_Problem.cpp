@@ -4,14 +4,15 @@ using namespace std;
 int main(){
       int test; cin >> test;
       while(test--){
-        string s; cin >> s;
-        reverse(s.begin(), s.end());
-        for (int i = 0; i < s.size(); i++)
+        string str; cin >> str;
+        reverse(str.begin(), str.end());
+
+        for (int i = 0; i < str.size(); i++)
         {
-            if(s[i]=='p') s[i]= 'q';
-            else if(s[i]=='q') s[i]= 'p';
+            if(str[i]=='p') str[i]= 'q';
+            else if(str[i]=='q') str[i]= 'p';
         }
-        cout << s << endl;
+        cout <<str<< endl;
       }
     return 0;
 }
